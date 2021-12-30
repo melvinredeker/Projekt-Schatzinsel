@@ -1,5 +1,7 @@
 # Projekt-Schatzinsel
 
+## Übersicht über das Projekt ##
+
 ## Planung ##
 
 ### Meilenstein 1 ###
