@@ -78,8 +78,7 @@ Zusätzliche Buttons auf dem Startbildschirm...
 ## Installation ##
 Da unser Projekt in der Programmiersprache Java geschrieben wurde, ist für die Ausführung die Java Runtime Enviroment nötig. Zudem wird, da es sich nur um den Sourcecode handelt, eine Java DIE benötigt. Da wir vorrangig mit der IDE „BlueJ“ gearbeitet haben, empfehlen wir Ihnen diese ebenfalls zu nutzen. 
 
-### Download ###
-Markup : <details>
+Markup : <details><title>Download</title>
            <p>Alle bisher benötigte Downloadlinks:
 		https://www.bluej.org/  | 
 		https://java.com/de/download/ |
