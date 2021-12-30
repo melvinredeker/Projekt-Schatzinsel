@@ -56,22 +56,22 @@ Zusätzliche Buttons auf dem Startbildschirm...
 
 - [ ] Erweiterbarkeit durch eigene Automaten
 
-resources/
-	css/...
-	gui_images/...
-	automat_default/
-		wallpapers/...
-		automat.ini
-		seekarte.jpg
-	automat_beispiel1/
-		wallpapers/...
-		automat.ini
-		seekarte.jpg
-	automat_beispiel2/
-		wallpapers/...
-		automat.ini
-		seekarte.jpg	
-	readme.txt
+		resources/
+		css/...
+		gui_images/...
+		automat_default/
+			wallpapers/...
+			automat.ini
+			seekarte.jpg
+		automat_beispiel1/
+			wallpapers/...
+			automat.ini
+			seekarte.jpg
+		automat_beispiel2/
+			wallpapers/...
+			automat.ini
+			seekarte.jpg	
+		readme.txt
 
 - [ ] Start des Spiels ohne BlueJ per exe
 
@@ -80,7 +80,8 @@ Da unser Projekt in der Programmiersprache Java geschrieben wurde, ist für die 
 
 ### Downloads ###
 Alle benötigten Downloadlinks:
- Markup :	* https://www.bluej.org/
+
+Markup :	* https://www.bluej.org/
 		* https://java.com/de/download/
 		* https://gluonhq.com/products/javafx/
 		
