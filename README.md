@@ -1,5 +1,3 @@
-# Projekt-Schatzinsel
-
 ![alt text](https://github.com/melvinredeker/Projekt-Schatzinsel/blob/main/repository_image-projekt_schatzinsel.png?raw=true)
 
 ## ℹ Übersicht über das Projekt ##
