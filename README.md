@@ -81,16 +81,7 @@ Da unser Projekt in der Programmiersprache Java geschrieben wurde, ist für die 
 ### Downloads ###
 Alle benötigten Downloadlinks:
 
-Markup :	* https://www.bluej.org/
-		* https://java.com/de/download/
-		* https://gluonhq.com/products/javafx/
-		
-		 Markup : * Bullet list
-              * Nested bullet
-                  * Sub-nested bullet etc
-          * Bullet list item 2
+* https://www.bluej.org/
+* https://java.com/de/download/
+* https://gluonhq.com/products/javafx/
 
-Markup : -Bullet list
-              -ested bullet
-                  -Sub-nested bullet etc
-          - Bullet list item 2 
