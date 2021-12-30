@@ -90,7 +90,7 @@ Markup :	* https://www.bluej.org/
                   * Sub-nested bullet etc
           * Bullet list item 2
 
-Markup : - Bullet list
-              - Nested bullet
-                  - Sub-nested bullet etc
+Markup : -Bullet list
+              -ested bullet
+                  -Sub-nested bullet etc
           - Bullet list item 2 
