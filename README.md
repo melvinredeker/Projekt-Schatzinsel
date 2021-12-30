@@ -48,12 +48,12 @@ Dieses Projekt ist im Rahmen des Schuljahres 2020/2021 entstanden und greift die
 
 Zusätzliche Buttons auf dem Startbildschirm...
 
-- [ ] zum Öffnen einer als Grafik hinterlegten Seekarte, die zusätzlich automatisch in den Zwischenspeicher kopiert wird und in einem beliebigen Programm eingefügt werden kann, um die Seekarte durch Eintragungen zu vervollständigen.
+- [ ] Zum Öffnen einer als Grafik hinterlegten Seekarte, die zusätzlich automatisch in den Zwischenspeicher kopiert wird und in einem beliebigen Programm eingefügt werden kann, um die Seekarte durch Eintragungen zu vervollständigen.
 
-- [ ] für einen weiteren Modus (Name?), indem die Übergangsfunktion tabellarisch ausgefüllt und die Eingabe vom System auf Fehler überprüft werden kann.
+- [ ] Für einen weiteren Modus (Name?), indem die Übergangsfunktion tabellarisch ausgefüllt und die Eingabe vom System auf Fehler überprüft werden kann.
 	- ggf. schaltet sich dieser Modus erst dann frei, wenn man zuvor über den Analyse-Modus den kürzesten Weg eingegeben hat
 
-- [ ]  zum Laden von anderen Seekarten bzw. Automaten
+- [ ]  Zum Laden von anderen Seekarten bzw. Automaten
 
 ### Meilenstein 5 ###
 
@@ -76,7 +76,8 @@ Zusätzliche Buttons auf dem Startbildschirm...
 			seekarte.jpg	
 		readme.txt
 
-- [ ] Start des Spiels ohne BlueJ per exe
+- [ ] Start des Spiels ohne BlueJ per exe-Datei
+- [ ] Eigene Grafiken
 
 ## 💾 Installation ##
 Da unser Projekt in der Programmiersprache Java geschrieben wurde, ist für die Ausführung die Java Runtime Enviroment nötig. Zudem wird, da es sich nur um den Sourcecode handelt, eine Java IDE benötigt. Da wir vorrangig mit der IDE „BlueJ“ gearbeitet haben, empfehlen wir Ihnen diese ebenfalls zu nutzen. 
