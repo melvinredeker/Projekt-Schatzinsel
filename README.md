@@ -80,6 +80,6 @@ Da unser Projekt in der Programmiersprache Java geschrieben wurde, ist für die 
 
 ### Downloads ###
 Alle benötigten Downloadlinks:
-	* https://www.bluej.org/
-	* https://java.com/de/download/
-	* https://gluonhq.com/products/javafx/
+ Markup :	* https://www.bluej.org/
+		* https://java.com/de/download/
+		* https://gluonhq.com/products/javafx/
