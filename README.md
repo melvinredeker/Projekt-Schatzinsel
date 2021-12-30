@@ -1,8 +1,8 @@
 # Projekt-Schatzinsel
 
-## Übersicht über das Projekt ##
+## 🗓 Übersicht über das Projekt ##
 
-## Planung ##
+## 🏆 Planung ##
 
 ### Meilenstein 1 ###
 - [X] App bekommt getter Methode für die Anwendung
@@ -77,7 +77,7 @@ Zusätzliche Buttons auf dem Startbildschirm...
 
 - [ ] Start des Spiels ohne BlueJ per exe
 
-## Installation ##
+## 💾 Installation ##
 Da unser Projekt in der Programmiersprache Java geschrieben wurde, ist für die Ausführung die Java Runtime Enviroment nötig. Zudem wird, da es sich nur um den Sourcecode handelt, eine Java IDE benötigt. Da wir vorrangig mit der IDE „BlueJ“ gearbeitet haben, empfehlen wir Ihnen diese ebenfalls zu nutzen. 
 
 ### Downloads ###
