@@ -1,10 +1,12 @@
 # Projekt-Schatzinsel
 
-## Meilenstein 1 ##
+## Planung ##
+
+### Meilenstein 1 ###
 - [X] App bekommt getter Methode für die Anwendung
 - [X] Methode "aktion" in App wird in die einzelnen Controller ausgelagert
 
-## Meilenstein 2 ##
+### Meilenstein 2 ###
 
 - [ ] Anpassungen der Automaten-Algorithmen an die Modellierungsergänzung der Klasse Zustand (Bezeichnung besteht fortan aus Präfix, ID und zusätzlich einer textlichen Beschriftung für das Schatzinsel-Projekt)
 
@@ -13,7 +15,7 @@
 - [ ] Inseldesign im Analyse-Modus und beim Export
 
 
-## Meilenstein 3 ##
+### Meilenstein 3 ###
 
 - [ ] Vergrößerung der GUI
 
@@ -39,7 +41,7 @@
 	- die Schatzinsel orange anstatt grün färben
 	- untergehendes Schiff mit Bezeichnung zusätzlich anzeigen
 
-## Meilenstein 4 ##
+### Meilenstein 4 ###
 
 Zusätzliche Buttons auf dem Startbildschirm...
 
@@ -50,7 +52,7 @@ Zusätzliche Buttons auf dem Startbildschirm...
 
 - [ ]  zum Laden von anderen Seekarten bzw. Automaten
 
-## Meilenstein 5 ##
+### Meilenstein 5 ###
 
 - [ ] Erweiterbarkeit durch eigene Automaten
 
