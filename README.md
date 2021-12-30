@@ -1,10 +1,10 @@
-# Projekt-Schatzinsel
+# Projekt-Schatzinsel#
 
-##Meilenstein 1
-App bekommt getter Methode für die Anwendung
-Methode "aktion" in App wird in die einzelnen Controller ausgelagert
+##Meilenstein 1##
+- [ ] App bekommt getter Methode für die Anwendung
+- [ ] Methode "aktion" in App wird in die einzelnen Controller ausgelagert
 
-##Meilenstein 2
+##Meilenstein 2##
 
 a) Anpassungen der Automaten-Algorithmen an die Modellierungsergänzung der Klasse Zustand (Bezeichnung besteht fortan aus Präfix, ID und zusätzlich einer textlichen Beschriftung für das Schatzinsel-Projekt)
 
@@ -13,7 +13,7 @@ b) Warnhinweis/Sicherheitsfrage vor Rückkehr aus dem Entdecker-Modus in das Hau
 c) Inseldesign im Analyse-Modus und beim Export
 
 
-##Meilenstein 3
+##Meilenstein 3##
 
 a) Vergrößerung der GUI
 
@@ -39,7 +39,7 @@ f) Fehlersenke beim Überschreiten der Schatzinsel
 	- die Schatzinsel orange anstatt grün färben
 	- untergehendes Schiff mit Bezeichnung zusätzlich anzeigen
 
-##Meilenstein 4
+##Meilenstein 4##
 
 Zusätzliche Buttons auf dem Startbildschirm...
 
@@ -50,7 +50,7 @@ b) für einen weiteren Modus (Name?), indem die Übergangsfunktion tabellarisch 
 
 c) zum Laden von anderen Seekarten bzw. Automaten
 
-##Meilenstein 5
+##Meilenstein 5##
 
 a) Erweiterbarkeit durch eigene Automaten
 
