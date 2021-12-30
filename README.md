@@ -1,9 +1,9 @@
 # Projekt-Schatzinsel
 
-## 🗓 Übersicht über das Projekt ##
+## ℹ Übersicht über das Projekt ##
 Dieses Projekt ist im Rahmen des Schuljahres 2020/2021 entstanden und greift die Thematik „Automaten & formale Sprachen“ mit einem spielerischen Ansatz, angelehnt an „Treasure Island“ auf.
 
-## 🏆 Planung ##
+## 🗓 Planung ##
 
 ### Meilenstein 1 ###
 - [X] App bekommt getter Methode für die Anwendung
