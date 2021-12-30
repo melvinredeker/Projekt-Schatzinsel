@@ -85,6 +85,9 @@ https://java.com/de/download/ |
 https://gluonhq.com/products/javafx/
 
 Markup : <details>
-           <summary>Installation</summary>
-           <p>Da unser Projekt in der Programmiersprache Java geschrieben wurde, ist für die Ausführung die Java Runtime Enviroment nötig. Zudem wird, da es sich nur um den Sourcecode handelt, eine Java DIE benötigt. Da wir vorrangig mit der IDE „BlueJ“ gearbeitet haben, empfehlen wir Ihnen diese ebenfalls zu nutzen. </p>
+           <summary>### Download ###</summary>
+           <p>Alle bisher benötigte Downloadlinks:
+		https://www.bluej.org/  | 
+		https://java.com/de/download/ |
+		https://gluonhq.com/products/javafx/</p>
          </details>
