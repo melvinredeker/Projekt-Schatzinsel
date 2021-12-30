@@ -78,9 +78,8 @@ resources/
 ## Installation ##
 Da unser Projekt in der Programmiersprache Java geschrieben wurde, ist für die Ausführung die Java Runtime Enviroment nötig. Zudem wird, da es sich nur um den Sourcecode handelt, eine Java IDE benötigt. Da wir vorrangig mit der IDE „BlueJ“ gearbeitet haben, empfehlen wir Ihnen diese ebenfalls zu nutzen. 
 
-Markup : <details><summary>Download</summary>
-           <p>Alle benötigten Downloadlinks:
-		* https://www.bluej.org/
-		* https://java.com/de/download/
-		* https://gluonhq.com/products/javafx/</p>
-         </details>
+### Downloads ###
+Alle benötigten Downloadlinks:
+	* https://www.bluej.org/
+	* https://java.com/de/download/
+	* https://gluonhq.com/products/javafx/
