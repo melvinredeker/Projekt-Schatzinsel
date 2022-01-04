@@ -13,7 +13,9 @@ Dieses Projekt ist im Rahmen des Schuljahres 2020/2021 entstanden und greift die
 
 - [ ] Anpassungen der Automaten-Algorithmen an die Modellierungsergänzung der Klasse Zustand (Bezeichnung besteht fortan aus Präfix, ID und zusätzlich einer textlichen Beschriftung für das Schatzinsel-Projekt)
 
-- [X] Inseldesign im Analyse-Modus und beim Export
+- [X] Warnhinweis/Sicherheitsfrage vor Rückkehr aus dem Entdecker-Modus in das Hauptmenü
+
+- [ ] Inseldesign im Analyse-Modus und beim Export
 
 
 ### Meilenstein 3 ###
