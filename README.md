@@ -1,4 +1,4 @@
-# Projekt-Schatzinsel
+![alt text](https://github.com/melvinredeker/Projekt-Schatzinsel/blob/main/thumbnail_repository.png?raw=true)
 
 ## ℹ Übersicht über das Projekt ##
 Dieses Projekt ist im Rahmen des Schuljahres 2020/2021 entstanden und greift die Thematik „Automaten & formale Sprachen“ mit einem spielerischen Ansatz, angelehnt an „Treasure Island“ auf.

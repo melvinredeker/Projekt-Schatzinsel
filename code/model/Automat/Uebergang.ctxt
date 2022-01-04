@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=Uebergang
+comment0.text=\r\n\ Eine\ Uebergang\ besteht\ aus\ einem\ Ausgangszustand,\ einem\ Uebergangszeichen\ und\r\n\ ihr\ kann\ eine\ beliebige\ Menge\ von\ Nachfolgezustaenden\ zugewiesen\ werden.\r\n\ \r\n\ @author\ \ Dennis\ Dierschke\r\n\ @version\ 2018-10-15\r\n
+comment1.params=pVon\ pMit
+comment1.target=Uebergang(Zustand,\ Zeichen)
+comment1.text=\r\n\ Konstruiert\ eine\ neue\ Uebergang\ mit\ einer\ zunaechst\ leeren\ Menge\ von\ Nachfolgezustaenden.\r\n\ \r\n\ @param\ \ \ pVon\ \ \ \ Ausgangszustand\r\n\ @param\ \ \ pMit\ \ \ \ Uebergangszeichen\r\n
+comment2.params=
+comment2.target=Zustand\ gibZustand()
+comment2.text=\r\n\ Gibt\ den\ Zustand\ des\ Uebergangs\ zurueck.\r\n\ \r\n\ @return\ \ Ausgangszustand\r\n
+comment3.params=
+comment3.target=Zeichen\ gibZeichen()
+comment3.text=\r\n\ Gibt\ das\ Zeichen\ des\ Uebergangs\ zurueck,\r\n\ \r\n\ @return\ \ Uebergangszeichen\r\n
+comment4.params=
+comment4.target=Zustandsmenge\ gibNachfolgezustaende()
+comment4.text=\r\n\ Gibt\ die\ Menge\ der\ Nachfolgezustaende\ des\ Uebergangs\ zurueck.\r\n\ \r\n\ @return\ \ Nachfolgezustaende\r\n
+comment5.params=pElement
+comment5.target=boolean\ istGleich(Menge.Element)
+comment6.params=
+comment6.target=java.lang.String\ gibBezeichnung()
+comment7.params=pNach
+comment7.target=void\ hinzufuegenNachfolgezustand(Zustand)
+comment7.text=\r\n\ Fuegt\ der\ Uebergang\ einen\ weiteren\ Nachfolgezustand\ hinzu,\ sofern\ \r\n\ dieser\ nicht\ bereits\ in\ der\ Zustandsmenge\ enthalten\ ist.\r\n\ \r\n\ @param\ \ \ pNach\ \ \ hinzuzufuegender\ Nachfolgezustand\r\n
+comment8.params=pNach
+comment8.target=void\ entferneNachfolgezustand(Zustand)
+comment8.text=\r\n\ Entfernt\ einen\ konkreten\ Nachfolgezustand\ aus\ der\ Zustandsmenge,\r\n\ sofern\ dieser\ Element\ der\ Zustandsmenge\ ist,\ sonst\ passiert\ nichts.\r\n\ \r\n\ @param\ \ \ pNach\ \ \ zu\ entfernender\ Nachfolgezustand\r\n
+numComments=9

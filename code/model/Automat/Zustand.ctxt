@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Zustand
+comment0.text=\r\n\ Ein\ Zustand\ ist\ eine\ Spezialisierung\ eines\ Elementes\r\n\ und\ muss\ mit\ einem\ der\ Praefixe\ {q,z}\ beginnen.\r\n\ \r\n\ @author\ \ Tristan\ Lippold\r\n\ @version\ 2020-07-03\r\n
+comment1.params=pNummer\ pBezeichnung
+comment1.target=Zustand(int,\ java.lang.String)
+comment1.text=\r\n\ Konstruiert\ einen\ neuen\ Zustand\ mit\ der\ angegebenen\ Nummer\ und\ der\ angegebenen\ Bezeichnung.\r\n\ \r\n\ @param\ \ \ pNummer\ \ \ \ \ \ \ \ \ Nummer\ des\ Zustands\r\n\ @param\ \ \ pBezeichnung\ \ \ \ Bezeichnung\ des\ Zustands\r\n
+comment2.params=pNummer
+comment2.target=Zustand\ erstelleZustand(int)
+comment2.text=\r\n\ Erstellt\ einen\ neuen\ Zustand\ mit\ der\ angegebenen\ Nummer.\r\n\ \r\n\ @param\ \ \ pNummer\ \ \ \ \ \ \ \ \ Nummer\ des\ Zustands\r\n\ \r\n\ @return\ \ neuer\ Zustand\ mit\ der\ angegebenen\ Nummer\r\n
+comment3.params=pNummer\ pBezeichnung
+comment3.target=Zustand\ erstelleZustand(int,\ java.lang.String)
+comment3.text=\r\n\ Erstellt\ einen\ neuen\ Zustand\ mit\ der\ angegebenen\ Nummer\ und\ der\ angegebenen\ Bezeichnung.\r\n\ \r\n\ @param\ \ \ pNummer\ \ \ \ \ \ \ \ \ Nummer\ des\ Zustands\r\n\ @param\ \ \ pBezeichnung\ \ \ \ Bezeichnung\ des\ Zustands\r\n\ \r\n\ @return\ \ neuer\ Zustand\ mit\ der\ angegebenen\ Nummer\ und\ der\ angegebenen\ Bezeichnung.\r\n
+comment4.params=
+comment4.target=java.lang.String\ gibName()
+comment4.text=\r\n\ Liefert\ den\ Namen\ des\ Zustands\ bestehend\ aus\ einem\ Praefix\ und\ einer\ Nummer.\r\n\r\n\ @return\ \ \ Praefix\ und\ Nummer\r\n
+comment5.params=
+comment5.target=int\ gibNummer()
+comment5.text=\r\n\ Liefert\ die\ Nummer\ des\ Zustands.\r\n\r\n\ @return\ \ Nummer\r\n
+comment6.params=pElement
+comment6.target=boolean\ istGleich(Menge.Element)
+numComments=7

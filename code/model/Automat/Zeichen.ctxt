@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Zeichen
+comment0.text=\r\n\ Ein\ Zeichen\ ist\ eine\ Spezialisierung\ eines\ Elementes\r\n\ und\ muss\ die\ Bezeichnungslaenge\ 1\ besitzen.\r\n\ \r\n\ @author\ \ Tristan\ Lippold\r\n\ @version\ 2020-07-03\r\n
+comment1.params=pBezeichnung
+comment1.target=Zeichen(java.lang.String)
+comment1.text=\r\n\ Konstruiert\ ein\ neues\ Zeichen\ mit\ der\ angegebenen\ Bezeichnung.\r\n\ \r\n\ @param\ \ \ pBezeichnung\ \ \ \ Bezeichnung\ des\ Zeichens\r\n
+comment2.params=pBezeichnung
+comment2.target=Zeichen\ erstelleZeichen(java.lang.String)
+comment2.text=\r\n\ Erstellt\ ein\ neues\ Zeichen,\ sofern\ die\ angegebene\ Bezeichnung\ erlaubt\ ist.\r\n\ \r\n\ @param\ \ \ pBezeichnung\ \ \ \ gewuenschte\ Bezeichnung\r\n\ \r\n\ @return\ \ neues\ Zeichen,\ wenn\ die\ angegebene\ Bezeichnung\ erlaubt\ ist,\ sonst\ null\r\n
+comment3.params=pBezeichnung
+comment3.target=boolean\ istErlaubt(java.lang.String)
+comment3.text=\r\n\ Bestimmt,\ ob\ die\ Bezeichnung\ erlaubt\ ist.\r\n\ \r\n\ @param\ \ \ pBezeichnung\ \ \ \ zu\ ueberpruefende\ Bezeichnung\r\n\ \r\n\ @return\ \ wahr,\ wenn\ die\ Bezeichnung\ erlaubt\ ist\r\n
+numComments=4

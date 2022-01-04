@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Zustandsmenge
+comment0.text=\r\n\ Eine\ Zustandsmenge\ ist\ eine\ Spezialisierung\ der\ Menge\ und\ kann\ nur\ Zustaende\ verwalten.\r\n\ \r\n\ @author\ \ Tristan\ Lippold\r\n\ @version\ 2020-07-03\r\n
+comment1.params=
+comment1.target=Zustandsmenge()
+comment1.text=\r\n\ Konstruiert\ eine\ neue\ Zustandsmenge,\ welche\ zunaechst\ \r\n\ eine\ leere\ Menge\ von\ Zustaenden\ verwaltet.\r\n
+comment2.params=
+comment2.target=Menge.Menge\ erstelleLeereMenge()
+numComments=3
