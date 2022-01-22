@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Element
+comment0.text=\r\n\ Ein\ Element\ besitzt\ eine\ Bezeichnung.\r\n\ \r\n\ @author\ \ Tristan\ Lippold\r\n\ @version\ 2020-07-03\r\n
+comment1.params=
+comment1.target=java.lang.String\ gibBezeichnung()
+comment1.text=\r\n\ Gibt\ die\ Bezeichnung\ des\ Elements\ zurueck.\r\n\ \r\n\ @return\ \ Bezeichnung\ vom\ Element\r\n
+comment2.params=pElement
+comment2.target=boolean\ istGleich(Element)
+comment2.text=\r\n\ Bestimmt,\ ob\ die\ Bezeichnungen\ der\ beiden\ Elemente\ gleich\ ist.\r\n\ \r\n\ @param\ \ \ pElement\ \ \ Element\r\n\ \r\n\ @return\ \ wahr,\ wenn\ die\ Bezeichnungen\ beider\ Elemente\ gleich\ sind\r\n
+numComments=3

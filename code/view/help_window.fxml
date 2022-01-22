@@ -15,7 +15,7 @@
             <Rectangle2D />
          </viewport>
       </ImageView>
-      <ImageView fx:id="imageview_exit" fitHeight="36.0" fitWidth="31.0" layoutX="537.0" layoutY="20.0" onMouseClicked="#beenden" onMouseEntered="#h_beenden" onMouseExited="#he_beenden" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imageview_exit" fitHeight="36.0" fitWidth="31.0" layoutX="537.0" layoutY="20.0" onMouseClicked="#exit" onMouseEntered="#h_exit" onMouseExited="#he_exit" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../resources/gui_images/Kreuz.png" />
          </image>

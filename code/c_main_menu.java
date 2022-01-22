@@ -1,8 +1,11 @@
-import java.net.URL;
+import java.net.URI;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URISyntaxException;
 
 /**
  * The 'c_main_menu' class provides and associates methods called by the fxml file 'main_menu.fxml'
@@ -13,9 +16,6 @@ public class c_main_menu {
 
     @FXML
     private ResourceBundle resources;
-
-    @FXML
-    private URL location;
 
     @FXML
     private ImageView imgageview_logo;
@@ -58,7 +58,7 @@ public class c_main_menu {
      * @param event (ImageView "imageview_analysismode" clicked)
      */
     @FXML
-    void analyse(MouseEvent event) {
+    void analyse(MouseEvent event) throws Exception {
         this.app.openAnalysis();
     }
 
@@ -67,8 +67,8 @@ public class c_main_menu {
      * @param event (ImageView "imageview_discovermode" clicked)
      */
     @FXML
-    void discover(MouseEvent event) {
-        this.app.openDiscover();
+    void discover(MouseEvent event) throws Exception {
+        this.app.openDiscoverIsland();
     }
 
     /**
@@ -76,7 +76,7 @@ public class c_main_menu {
      * @param event (ImageView "imageview_help" clicked)
      */
     @FXML
-    void help(MouseEvent event) {
+    void help(MouseEvent event) throws Exception {
         this.app.openHelp();
     }
 
@@ -85,7 +85,7 @@ public class c_main_menu {
      * @param event (Credit label clicked)
      */
     @FXML
-    void informations(MouseEvent event) {
+    void informations(MouseEvent event) throws IOException {
         this.openURL("https://instagram.com/tris.pold");
         this.openURL("https://instagram.com/melvinredeker");
     }
@@ -95,7 +95,7 @@ public class c_main_menu {
      * @param event (ImageView "imgageview_logo" clicked)
      */
     @FXML
-    void treasureisland(MouseEvent event) {
+    void treasureisland(MouseEvent event) throws IOException {
         this.openURL("mailto:melvinredeker@hotmail.com,tristan.lippold@outlook.de?subject=Dings%2C%20Treasure%20Island%3A%20Mega!&body=Servus%2C%20gr%C3%BCzi%2C%20moin!%0D%0A%0D%0AWyldes%20Brett%20habt%20ihr%20da%20gedropt.%20Aber%20%C3%A4h%2C%20was%20ich%20noch%20sagen%20wollte%3A%0D%0A%0D%0A%0D%0A%0D%0AHauta%20rein.%0D%0AIrgendwer%2C%20der%20eure%20Vorlage%20nutzt.");
     }
 

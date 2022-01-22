@@ -55,7 +55,7 @@ public class c_discovermode_endcard {
      * @param event (Button "button_analysismode" clicked)
      */
     @FXML
-    void analysismode(ActionEvent event) {
+    void analysismode(ActionEvent event) throws Exception {
         this.app.openAnalysis();
     }
 
@@ -64,7 +64,7 @@ public class c_discovermode_endcard {
      * @param event (Button "button_main_menu" clicked)
      */    
     @FXML
-    void main_menu(ActionEvent event) {
+    void main_menu(ActionEvent event) throws Exception{
         this.app.openMainmenu();
     }
 

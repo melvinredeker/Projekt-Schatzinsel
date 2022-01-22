@@ -1,5 +1,3 @@
-import model.Automat.*;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -16,11 +14,11 @@ public class App extends Application {
     private Management management;
 
     Stage stage;
-    mainController mainController;
-    inselController inselController;
-    zielController zielController;
-    analyseController analyseController;
-    hilfeController hilfeController;
+    c_main_menu mainController;
+    c_discovermode_island inselController;
+    c_discovermode_endcard zielController;
+    c_analysismode analyseController;
+    c_help_window hilfeController;
     Stage hilfeStage;
 
     private double xOffset;
@@ -36,12 +34,12 @@ public class App extends Application {
         }
 
         FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(getClass().getResource("/view/main.fxml"));
+        fxmlLoader.setLocation(getClass().getResource("/view/main_menu.fxml"));
         
         Parent root = fxmlLoader.load();
         
-        this.mainController = (mainController) fxmlLoader.getController();
-        this.mainController.setzeApp(this);
+        this.mainController = (c_main_menu) fxmlLoader.getController();
+        this.mainController.setApplication(this);
 
         stage.setScene(new Scene(root));
         stage.setResizable(false);
@@ -49,60 +47,60 @@ public class App extends Application {
         stage.getIcons().add(new Image("resources/gui_images/Title_Logo_3.png"));
         stage.show();
 
-        this.anwendung = new Schatzinselanwendung();
-        this.anwendung.ladeIniDatei();
+        this.management = new Management();
+        this.management.ladeIniDatei();
     }
 
     public void openMainmenu() throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(getClass().getResource("/view/main.fxml"));
+        fxmlLoader.setLocation(getClass().getResource("/view/main_menu.fxml"));
         Parent root = fxmlLoader.load();
-        this.mainController = (mainController) fxmlLoader.getController();
-        this.mainController.setzeApp(this);
+        this.mainController = (c_main_menu) fxmlLoader.getController();
+        this.mainController.setApplication(this);
 
         stage.setScene(new Scene(root));
         stage.show();
 
-        this.anwendung.leereSchiffsFolge();
+        this.management.leereSchiffsFolge();
     }
 
     public void openDiscoverIsland() throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(getClass().getResource("/view/Entdeckermodus_Insel.fxml"));
+        fxmlLoader.setLocation(getClass().getResource("/view/discovermode_island.fxml"));
         Parent root = fxmlLoader.load();
-        this.inselController = (inselController) fxmlLoader.getController();
-        this.inselController.setzeApp(this);
+        this.inselController = (c_discovermode_island) fxmlLoader.getController();
+        this.inselController.setApplication(this);
 
         stage.setScene(new Scene(root));
         stage.show();
 
-        this.inselController.neueInsel(this.anwendung.gibAktuelleInselBezeichnung());
+        this.inselController.newIsland(this.management.getCurrentIslandName());
     }
 
     public void openDiscoverEndcard() throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(getClass().getResource("/view/Entdeckermodus_Ziel.fxml"));
+        fxmlLoader.setLocation(getClass().getResource("/view/discovermode_endcard.fxml"));
         Parent root = fxmlLoader.load();
-        this.zielController = (zielController) fxmlLoader.getController();
-        this.zielController.setzeApp(this);
+        this.zielController = (c_discovermode_endcard) fxmlLoader.getController();
+        this.zielController.setApplication(this);
 
         stage.setScene(new Scene(root));
         stage.show();
 
-        this.zielController.neueInsel(this.anwendung.gibAktuelleInselBezeichnung());
+        this.zielController.newIsland(this.management.getCurrentIslandName());
     }
 
     public void openAnalysis() throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(getClass().getResource("/view/Analysemodus.fxml"));
+        fxmlLoader.setLocation(getClass().getResource("/view/analysismode.fxml"));
         Parent root = fxmlLoader.load();
-        this.analyseController = (analyseController) fxmlLoader.getController();
+        this.analyseController = (c_analysismode) fxmlLoader.getController();
         this.analyseController.setzeApp(this);
 
         stage.setScene(new Scene(root));
         stage.show();
 
-        this.analyseController.setzeEingabeFeldInhalt(anwendung.gibSchiffsfolge());
+        this.analyseController.setzeEingabeFeldInhalt(management.gibSchiffsfolge());
         this.analyseController.bearbeiteEingabe();
     }
 
@@ -112,10 +110,10 @@ public class App extends Application {
             hilfeStage = new Stage();
 
             FXMLLoader fxmlLoader = new FXMLLoader();
-            fxmlLoader.setLocation(getClass().getResource("/view/Hilfe.fxml"));
+            fxmlLoader.setLocation(getClass().getResource("/view/help_window.fxml"));
             Parent root = fxmlLoader.load();
-            this.hilfeController = (hilfeController) fxmlLoader.getController();
-            this.hilfeController.setzeApp(this);
+            this.hilfeController = (c_help_window) fxmlLoader.getController();
+            this.hilfeController.setApplication(this);
 
             Scene scene = new Scene(root);
             scene.setFill(Color.TRANSPARENT);
@@ -154,8 +152,8 @@ public class App extends Application {
         }
     }
 
-    public Schatzinselanwendung getManagement() {
-        return this.anwendung;
+    public Management getManagement() {
+        return this.management;
     }
 
     public Scene getScene() {

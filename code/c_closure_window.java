@@ -48,8 +48,8 @@ public class c_closure_window {
      * @param event (Button "button_cancel" pressed)
      */
     @FXML
-    void cancel(ActionEvent event) {
-        islandController.schließenSchließen();
+    void cancel(ActionEvent event) throws Exception {
+        islandController.hideClose();
     }
 
     /**
@@ -57,9 +57,9 @@ public class c_closure_window {
      * @param event (Button "button_mainmenu" pressed)
      */
     @FXML
-    void mainmenu(ActionEvent event) {
-        this.app.startOeffnen();
-        this.islandController.schließenSchließen();
+    void mainmenu(ActionEvent event) throws Exception {
+        this.app.openMainmenu();
+        this.islandController.hideClose();
     }
 
     /**

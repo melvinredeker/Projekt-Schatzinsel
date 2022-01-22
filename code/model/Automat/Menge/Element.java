@@ -1,5 +1,5 @@
 package model.Automat.Menge;
-
+ 
 /**
  * Ein Element besitzt eine Bezeichnung.
  * 

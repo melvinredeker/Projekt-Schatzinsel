@@ -1,5 +1,5 @@
 package model.Automat;
-
+ 
 import model.Automat.Menge.*;
 
 /**

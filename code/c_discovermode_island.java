@@ -1,11 +1,20 @@
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.image.Image;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+import java.io.File;
 
 /**
  * The 'c_discovermode_island' class provides and associates methods called by the fxml file 'discovermode_island.fxml'
@@ -56,7 +65,7 @@ public class c_discovermode_island {
      * @param event (Button "button_mainmenu" clicked)
      */
     @FXML
-    void mainmenu(ActionEvent event) {
+    void mainmenu(ActionEvent event) throws Exception {
         this.showClose();
     }
     
@@ -65,11 +74,11 @@ public class c_discovermode_island {
      * @param event (Button "button_a" clicked)
      */
     @FXML
-    void ship_a(ActionEvent event) {
+    void ship_a(ActionEvent event) throws Exception {
         Management management = this.app.getManagement();
         management.useShip("A");
             if(management.isAtEnd()) {
-                this.app.openAnalysisEndcard();
+                this.app.openDiscoverEndcard();
             } else {
                 this.newIsland(management.getCurrentIslandName());
             }
@@ -80,11 +89,11 @@ public class c_discovermode_island {
      * @param event (Button "button_b" clicked)
      */
     @FXML
-    void ship_b(ActionEvent event) {
+    void ship_b(ActionEvent event) throws Exception {
         Management management = this.app.getManagement();
         management.useShip("B");
             if(management.isAtEnd()) {
-                this.app.openAnalysisEndcard();
+                this.app.openDiscoverEndcard();
             } else {
                 this.newIsland(management.getCurrentIslandName());
             }
@@ -95,14 +104,14 @@ public class c_discovermode_island {
      * @param pName
      */
     public void newIsland(String pName) {
-        insel_name.setText(pName);
+        textxfield_islandname.setText(pName);
         
         File file1 = new File("resources/wallpapers/" + pName + ".jpeg");
         File file2 = new File("resources/wallpapers/" + pName + ".jpg");
         File file3 = new File("resources/wallpapers/" + pName + ".png");
         
         if (file1.exists()) {
-            this.wallpapper.setImage(new Image("resources/wallpapers/" + pName + ".jpeg"));
+            this.wallpaper.setImage(new Image("resources/wallpapers/" + pName + ".jpeg"));
         } else if(file2.exists()) {
             this.wallpaper.setImage(new Image("resources/wallpapers/" + pName + ".jpg"));
         } else if(file3.exists()) {
@@ -127,7 +136,7 @@ public class c_discovermode_island {
             FXMLLoader fxmlLoader = new FXMLLoader();
             fxmlLoader.setLocation(getClass().getResource("/view/closure_window.fxml"));
             Parent root = fxmlLoader.load();
-            this.closeController = (closeController) fxmlLoader.getController();
+            this.closeController = (c_closure_window) fxmlLoader.getController();
             this.closeController.setApplication(this.app);
             this.closeController.setIslandController(this);
 

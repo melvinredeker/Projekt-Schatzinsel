@@ -46,7 +46,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <ImageView fx:id="imageview_help" fitHeight="64.0" fitWidth="287.0" layoutX="257.0" layoutY="386.0" onMouseClicked="#help" onMouseEntered="#h_help" onMouseExited="#he_hilfe" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imageview_help" fitHeight="64.0" fitWidth="287.0" layoutX="257.0" layoutY="386.0" onMouseClicked="#help" onMouseEntered="#h_help" onMouseExited="#he_help" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../resources/gui_images/HILFE_BUTTON.png" />
          </image>

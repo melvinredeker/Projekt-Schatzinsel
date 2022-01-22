@@ -1,5 +1,5 @@
 package model.Automat.Menge;
-
+ 
 /**
  * Objekte der generischen Klasse Menge verwalten beliebig viele Inhaltsobjekte,
  * allerdings darf jedes Inhaltsobjekt nur einmal in der Menge vorkommen.

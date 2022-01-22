@@ -88,7 +88,7 @@ public class c_analysismode {
     private ArrayList<ToggleButton> insel_liste = new ArrayList<ToggleButton>();
 
     @FXML
-    private Button button_hauptmenü;
+    private Button button_hauptmenue;
 
     @FXML
     void eingabe(KeyEvent event) {
@@ -129,30 +129,30 @@ public class c_analysismode {
     }
     
     @FXML
-    void h_hauptmenü(MouseEvent event) {
-        button_hauptmenü.setScaleX(1.1);
-        button_hauptmenü.setScaleY(1.1);
+    void h_hauptmenue(MouseEvent event) {
+        button_hauptmenue.setScaleX(1.1);
+        button_hauptmenue.setScaleY(1.1);
     }
 
     @FXML
-    void hauptmenü(ActionEvent event) throws Exception {
-        app.startOeffnen();
+    void hauptmenue(ActionEvent event) throws Exception {
+        app.openMainmenu();
     }
 
     @FXML
-    void he_hauptmenü(MouseEvent event) {
-        button_hauptmenü.setScaleX(1.0);
-        button_hauptmenü.setScaleY(1.0);
+    void he_hauptmenue(MouseEvent event) {
+        button_hauptmenue.setScaleX(1.0);
+        button_hauptmenue.setScaleY(1.0);
     }
 
     @FXML
-    void h_prüfe(MouseEvent event) {
+    void h_pruefe(MouseEvent event) {
         button_pruefe.setScaleX(1.1);
         button_pruefe.setScaleY(1.1);
     }
 
     @FXML
-    void he_prüfe(MouseEvent event) {
+    void he_pruefe(MouseEvent event) {
         button_pruefe.setScaleX(1.0);
         button_pruefe.setScaleY(1.0);
     }
@@ -186,7 +186,7 @@ public class c_analysismode {
 
     @FXML
     void initialize() {
-        grid.getStylesheets().add("resources/CSS/insel_button.css");
+        grid.getStylesheets().add("resources/CSS/button.css");
         scroll.setFitToHeight(true);
         pane_alles.setOnScroll(new EventHandler<ScrollEvent>() {
                 @Override
@@ -222,7 +222,7 @@ public class c_analysismode {
     }
 
     public void bearbeiteEingabe(){
-        Schatzinselanwendung anwendung = this.app.gibAnwendung();
+        Management anwendung = this.app.getManagement();
         String schiffsFolge = this.gibEingabeFeldInhalt();
             if(anwendung.istGueltigeEingabe(schiffsFolge)) {
                 anwendung.setzeSchiffsfolge(schiffsFolge);
@@ -231,7 +231,7 @@ public class c_analysismode {
                     schiffsFolgeArray[i] = schiffsFolge.substring(i, i+1);
                 }
                 this.folgeErstellen(anwendung.gibBefahreneInselnBezeichnungen(), schiffsFolgeArray);
-                if(anwendung.istAmZiel()) {
+                if(anwendung.isAtEnd()) {
                     this.setzeTextInformation("Ziel erreicht!");
                 } else {
                     this.setzeTextInformation("Ziel nicht erreicht!");
@@ -251,7 +251,7 @@ public class c_analysismode {
     }
 
     public void pruefeWiederholung() throws Exception{
-        Schatzinselanwendung anwendung = this.app.gibAnwendung();
+        Management anwendung = this.app.getManagement();
         int[] inselnPos = this.gibPosInselnKlick();
             if(inselnPos != null) {
                 String text = anwendung.entferneWiederholung(anwendung.gibSchiffsfolge(), inselnPos[0], inselnPos[1]);
@@ -267,7 +267,7 @@ public class c_analysismode {
     }
 
     public void exportiere() {
-        Schatzinselanwendung anwendung = this.app.gibAnwendung();
+        Management anwendung = this.app.getManagement();
         String schiffsFolge = anwendung.gibSchiffsfolge();
         String[] inselnBezeichnungen = anwendung.gibBefahreneInselnBezeichnungen();
 
@@ -372,13 +372,13 @@ public class c_analysismode {
         insel_button.setOnMouseEntered(new EventHandler<MouseEvent>() {
                 @Override    
                 public void handle(MouseEvent me) {
-                    app.gibSzene().setCursor(Cursor.HAND);
+                    app.getScene().setCursor(Cursor.HAND);
                 }
             });
         insel_button.setOnMouseExited(new EventHandler<MouseEvent>() {
                 @Override    
                 public void handle(MouseEvent me) {
-                    app.gibSzene().setCursor(Cursor.DEFAULT);
+                    app.getScene().setCursor(Cursor.DEFAULT);
                 }
             });
         insel_button.setOnAction(new EventHandler<ActionEvent>() {

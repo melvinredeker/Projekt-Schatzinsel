@@ -1,7 +1,5 @@
 package model.Automat;
-
-import model.Automat.Menge.*;
-
+ 
 /**
  * Ein Automat ist ein endlicher Automat und besteht aus einer Zustandsmenge,
  * einem Startzustand, einem Eingabealphabet, einer Menge akzeptierender

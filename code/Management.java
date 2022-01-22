@@ -23,27 +23,47 @@ public class Management {
 
     }
     
-    // TODO: Java Doc
+    /**
+     * Gibt zurueck, ob mit der derzeitigen Schiffsfolge ein Endzustand erreicht wird.
+     * 
+     * @return      wahr, wenn Eingabe Teil der Sprache ist
+     */ 
     public boolean isAtEnd() {
         return Algorithmen.akzeptiertEingabe(this.inseln, this.schiffsFolge);
     }
     
-    // TODO: Java Doc
+    /**
+     * Setzt die aktuelle Schiffsfolge zurueck.
+     */
     public void leereSchiffsFolge() {
         this.schiffsFolge = "";
     }
     
-    // TODO: Java Doc
+    /**
+     * Gibt die aktuelle Schiffsfolge als String zurueck.
+     *
+     * @return      aktuelle Schiffsfolge
+     */
     public String gibSchiffsfolge() {
         return this.schiffsFolge;
     }
     
-    // TODO: Java Doc
+    /**
+     * Setzt die Schiffsfolge auf den uebergebenen String.
+     *
+     * @param   pSchiffsFolge   neue Schiffsfolge
+     */
     public void setzeSchiffsfolge(String pSchiffsFolge) {
         this.schiffsFolge = pSchiffsFolge;
     }
     
-    // TODO: Java Doc
+    /**
+     * Prueft, ob mit der uebergebenen Eingabe eine Fehlersenke erreicht wird.
+     *
+     * @param   pEingabe    zu ueperpruefende Eingabe
+     *
+     * @return      wahr, wenn keine Fehlersenke erreicht wird
+     */
     public boolean istGueltigeEingabe(String pEingabe) {
         Zustand aktuellerZustand = this.inseln.gibS();
         for(int i = 0; i < pEingabe.toCharArray().length; i++) {
@@ -64,51 +84,51 @@ public class Management {
     }
     
     /**
-     * Lädt die .ini Datei aus dem Ordner '/resources/Data/' und erzeugt aus den darin enthaltenen Daten einen Automaten.
+     * Laedt die .ini Datei aus dem Ordner '/resources/Data/' und erzeugt aus den darin enthaltenen Daten einen Automaten.
      */
     public void ladeIniDatei(){
         try {
             File myObj = new File("resources/Data/Automat.ini");
             Scanner myReader = new Scanner(myObj);
             this.inseln = new Automat();
-            boolean zustaende = false;
-            boolean zeichen = false;
-            boolean start = false;
-            boolean ende = false;
+            boolean zustaendeErledigt = false;
+            boolean zeichenErledigt = false;
+            boolean startErledigt = false;
+            boolean endeErledigt = false;
 
             while (myReader.hasNextLine()) {
                 String data = myReader.nextLine();
-                if(data.equals("[Zustaende]")){;
+                if(data.equals("[Zustaende]")){             // Abfangen von erster Einlesezeile
                 }
                 else if(data.equals("[Zeichen]")){
-                    zustaende = true;
+                    zustaendeErledigt = true;
                 }
                 else if(data.equals("[Startzustand]")){
-                    zeichen = true;
+                    zeichenErledigt = true;
                 }
                 else if(data.equals("[Endzustand]")){                    
-                    start = true;
+                    startErledigt = true;
                 }
-                else if(data.equals("[UEbergaenge]")){
-                    ende = true;
+                else if(data.equals("[Uebergaenge]")){
+                    endeErledigt = true;
                 }
-                else if(zustaende != true){
+                else if(zustaendeErledigt != true){         // Zustaende erstellen
                     String[] tmp = data.split(" - ");
                     String bezeichnung = tmp[1];
                     String id = tmp [0];
 
                     this.inseln.neuerZustand(Integer.parseInt(id.substring(1)), bezeichnung);
                 }
-                else if(zeichen != true){
+                else if(zeichenErledigt != true){           // Zeichen erstellen
                     this.inseln.neuesZeichen(data);
                 }
-                else if(start != true){
+                else if(startErledigt != true){             // Startzustand setzen
                     this.inseln.setzeStartzustand(Integer.parseInt(data.substring(1)));
                 }
-                else if(ende != true){
+                else if(endeErledigt != true){              // Endzustaende setzen
                     this.inseln.setzeZustandAlsEndzustand(Integer.parseInt(data.substring(1)));
                 }
-                else{
+                else{                                       // Uebergaenge erstellen
                     String[] tmp = data.split(", ");
                     String id1 = tmp [0];
                     String eingabe = tmp [1];

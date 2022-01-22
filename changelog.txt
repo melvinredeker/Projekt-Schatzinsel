@@ -2,15 +2,6 @@
 +++ Meilenstein 1 +++
 ---------------------
 
-a) App bekommt getter-Methode für die Anwendung
-
-b) Methode "aktion" in App wird in die einzelnen Controller ausgelagert
-
-c) Klassendiagramm modifizieren
-		KD Menge (Element, Lost, Menge, Mengenoperation)		@Dennis
-
-d) Ordnerstruktur überarbeiten
-
 e) JavaDoc von Umlauten säubern
 
 f) JavaDoc vervollständigen
@@ -115,3 +106,5 @@ a) Erweiterbarkeit durch eigene Automaten
 		readme.txt
 
 b) Start des Spiels ohne BlueJ per exe
+
+c) JavaDoc von Umlauten säubern

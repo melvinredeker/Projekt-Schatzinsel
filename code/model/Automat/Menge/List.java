@@ -1,5 +1,5 @@
 package model.Automat.Menge;
-
+ 
 /**
  * Materialien zu den zentralen NRW-Abiturpruefungen im Fach Informatik ab 2018
  * 

@@ -1,7 +1,7 @@
 package model.Automat;
 
-import model.Automat.Menge.*;
 import java.util.ArrayList;
+
 /**
  * Die Klasse operiert auf Automaten und stellt verschiedene Verfahren zur Verfuegung.
  * 
@@ -749,25 +749,5 @@ public abstract class Algorithmen {
         }
 
         return minDEA;
-    }
-
-    private static void gibAlleEingaben(Alphabet pE, int pLaengeMax, int pTiefe, List<String> pEingaben) {
-        int anzahl;
-
-        if(pLaengeMax > pTiefe) {
-            anzahl = pE.anzahl();
-            pEingaben.toFirst();
-            for(int k = 0; k < Math.pow(pLaengeMax, pTiefe); k++) {
-                pE.zumAnfang();
-                while(!pE.istAmEnde()) {
-                    for(int i = 0; i < Math.pow(anzahl, pLaengeMax - pTiefe - 1); i++) {
-                        pEingaben.setContent(pEingaben.getContent() + pE.gibAktuelles().gibBezeichnung());
-                        pEingaben.next();
-                    }
-                    pE.zumNaechsten();
-                }
-            }
-            Algorithmen.gibAlleEingaben(pE, pLaengeMax, pTiefe + 1, pEingaben);
-        }
     }
 }

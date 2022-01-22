@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane fx:id="pane_alles" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="analyseController">
+<Pane fx:id="pane_alles" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="c_analysismode">
    <children>
       <ImageView fx:id="hintergrundbild" fitHeight="600.0" fitWidth="800.0" opacity="0.3" pickOnBounds="true">
          <image>
@@ -42,7 +42,7 @@
                   <Font size="18.0" />
                </font>
             </Text>
-            <Button fx:id="button_pruefe" layoutX="102.0" layoutY="78.0" mnemonicParsing="false" onAction="#pruefe" onMouseEntered="#h_prüfe" onMouseExited="#he_prüfe" prefHeight="44.0" prefWidth="152.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="Prüfe" textAlignment="CENTER">
+            <Button fx:id="button_pruefe" layoutX="102.0" layoutY="78.0" mnemonicParsing="false" onAction="#pruefe" onMouseEntered="#h_pruefe" onMouseExited="#he_pruefe" prefHeight="44.0" prefWidth="152.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="Prüfe" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="21.0" />
                </font>
@@ -59,7 +59,7 @@
             </Button>
          </children>
       </AnchorPane>
-      <ScrollPane fx:id="scroll" prefHeight="467.0" prefWidth="800.0" stylesheets="@../resources/CSS/Analysemodus.css">
+      <ScrollPane fx:id="scroll" prefHeight="467.0" prefWidth="800.0" stylesheets="@../resources/CSS/style.css">
          <content>
             <GridPane fx:id="grid">
               <columnConstraints>
@@ -84,7 +84,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="button_hauptmenü" alignment="CENTER" focusTraversable="false" layoutX="662.0" layoutY="15.0" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#hauptmenü" onMouseEntered="#h_hauptmenü" onMouseExited="#he_hauptmenü" prefHeight="43.0" prefWidth="138.0" style="-fx-background-color: #10ebb8; -fx-background-radius: 0; -fx-border-radius: 0; -fx-border-width: 1;" text="Hauptmenü" textAlignment="CENTER" textFill="WHITE">
+      <Button fx:id="button_hauptmenue" alignment="CENTER" focusTraversable="false" layoutX="662.0" layoutY="15.0" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#hauptmenue" onMouseEntered="#h_hauptmenue" onMouseExited="#he_hauptmenue" prefHeight="43.0" prefWidth="138.0" style="-fx-background-color: #10ebb8; -fx-background-radius: 0; -fx-border-radius: 0; -fx-border-width: 1;" text="Hauptmenü" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>

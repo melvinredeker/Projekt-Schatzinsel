@@ -1,5 +1,5 @@
 package model.Automat.Menge;
-
+ 
 /**
  * Das generische Interface Mengenoperationen<Inhaltstyp> legt die Methoden fest,
  * ueber die Mengen verfuegen muessen. Der Inhaltstyp muss eine Spezialisierung eines 

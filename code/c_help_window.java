@@ -1,5 +1,5 @@
+import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -36,7 +36,7 @@ public class c_help_window {
      */
     @FXML
     void exit(MouseEvent event) {
-        app.hideHelp();
+        app.closeHelp();
     }
 
     /**
