@@ -1,0 +1,26 @@
+#BlueJ package file
+objectbench.height=302
+objectbench.width=2536
+package.divider.horizontal=0.599476439790576
+package.divider.vertical=0.6767782426778243
+package.editor.height=640
+package.editor.width=2425
+package.editor.x=-8
+package.editor.y=-8
+package.frame.height=1056
+package.frame.width=2576
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
+readme.height=58
+readme.name=@README
+readme.width=47
+readme.x=10
+readme.y=10
+target1.height=82
+target1.name=Automat
+target1.type=PackageTarget
+target1.width=120
+target1.x=270
+target1.y=10

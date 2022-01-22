@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="pane_alles" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="c_analysismode">
+   <children>
+      <ImageView fx:id="hintergrundbild" fitHeight="600.0" fitWidth="800.0" opacity="0.3" pickOnBounds="true">
+         <image>
+            <Image url="@../resources/wallpapers/Titelbild.jpg" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <AnchorPane layoutY="467.0" prefHeight="133.0" prefWidth="800.0" style="-fx-background-color: #10ebb8;">
+         <children>
+            <Text fx:id="label_information" fill="WHITE" layoutX="486.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="300.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="wiederholung_1" fill="WHITE" layoutX="28.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="300.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="wiederholung_2" fill="WHITE" layoutX="28.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="300.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="button_pruefe" layoutX="102.0" layoutY="78.0" mnemonicParsing="false" onAction="#pruefe" onMouseEntered="#h_pruefe" onMouseExited="#he_pruefe" prefHeight="44.0" prefWidth="152.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="Prüfe" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="button_exportiere" layoutX="569.0" layoutY="80.0" mnemonicParsing="false" onAction="#exportiere" onMouseEntered="#h_exportiere" onMouseExited="#he_exportiere" prefHeight="44.0" prefWidth="152.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="Exportiere" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ScrollPane fx:id="scroll" prefHeight="467.0" prefWidth="800.0" stylesheets="@../resources/CSS/style.css">
+         <content>
+            <GridPane fx:id="grid">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <TextField fx:id="eingabe_feld" focusTraversable="false" layoutY="14.0" maxHeight="44.0" minHeight="44.0" onKeyPressed="#enterGedrueckt" onKeyTyped="#eingabe" pickOnBounds="false" prefHeight="44.0" prefWidth="228.0" promptText="Geben Sie hier die Schiffsfolge an" style="-fx-background-color: white; -fx-border-width: 1; -fx-border-color: #10ebb8; -fx-background-radius: 0; fx-text-fill: black;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="button_los" alignment="CENTER" focusTraversable="false" layoutX="228.0" layoutY="14.0" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#los" prefHeight="43.0" prefWidth="43.0" style="-fx-background-color: #10ebb8; -fx-background-radius: 0; -fx-border-radius: 0; -fx-border-width: 1;" text="Los" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="button_hauptmenue" alignment="CENTER" focusTraversable="false" layoutX="662.0" layoutY="15.0" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#hauptmenue" onMouseEntered="#h_hauptmenue" onMouseExited="#he_hauptmenue" prefHeight="43.0" prefWidth="138.0" style="-fx-background-color: #10ebb8; -fx-background-radius: 0; -fx-border-radius: 0; -fx-border-width: 1;" text="Hauptmenü" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</Pane>

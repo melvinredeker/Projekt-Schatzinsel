@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="378.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="361.0" prefWidth="582.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="c_help_window">
+   <children>
+      <ImageView fitHeight="361.0" fitWidth="582.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/gui_images/HILFE_FENSTER.png" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <ImageView fx:id="imageview_exit" fitHeight="36.0" fitWidth="31.0" layoutX="537.0" layoutY="20.0" onMouseClicked="#exit" onMouseEntered="#h_exit" onMouseExited="#he_exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/gui_images/Kreuz.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
